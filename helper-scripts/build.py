@@ -1,17 +1,18 @@
 #Builds main src file
 
 import os
+
 ROOT = os.getcwd()
 
-cmd = "g++ -c -o .\\build\\main.o .\\src\\main.cpp"
+cmd = "g++ -c -o ."+os.sep+"build"+os.sep+"main.o ."+os.sep+"src"+os.sep+"main.cpp"
 os.system(cmd)
 
-objects = os.listdir(ROOT + "\\build")
-cmd = "g++  -o .\\bin\\a"
+objects = os.listdir(ROOT + ""+os.sep+"build")
+cmd = "g++  -o ."+os.sep+"bin"+os.sep+"a"
 
 objects.remove(".gitkeep")
 
 for o in objects:
-    cmd += " .\\build\\" + o
+    cmd += " ."+os.sep+"build"+os.sep+"" + o
 
 os.system(cmd)

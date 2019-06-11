@@ -2,5 +2,5 @@
 
 import os
 
-cmd = ".\\bin\\a"
+cmd = "."+os.sep+"bin"+os.sep+"a"
 os.system(cmd)

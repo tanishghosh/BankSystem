@@ -1,9 +1,9 @@
 #Builds all src files and executes the application
 
 import os
-
-cmd = "python .\\helper-scripts\\build-all.py"
+  
+cmd = "python ."+os.sep+"helper-scripts"+os.sep+"build-all.py"
 os.system(cmd)
 
-cmd = "python .\\helper-scripts\\run.py"
+cmd = "python ."+os.sep+"helper-scripts"+os.sep+"run.py"
 os.system(cmd)

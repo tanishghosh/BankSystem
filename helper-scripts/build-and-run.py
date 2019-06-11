@@ -2,8 +2,8 @@
 
 import os
 
-cmd = "python .\\helper-scripts\\build.py"
+cmd = "python ."+os.sep+"helper-scripts"+os.sep+"build.py"
 os.system(cmd)
 
-cmd = "python .\\helper-scripts\\run.py"
+cmd = "python ."+os.sep+"helper-scripts"+os.sep+"run.py"
 os.system(cmd)
