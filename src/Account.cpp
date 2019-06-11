@@ -1,5 +1,5 @@
 #include <iostream>
-#include "..\include\BankSystem\Account.hpp"
+#include "../include/BankSystem/Account.hpp"
 
 Account::Account() //Constructor for initializing values
 {
@@ -14,27 +14,27 @@ Account::~Account() //Destructor to free memory when required
 
 std::string Account::getHolderName()
 {
-    return(this->holderName);
+    return (this->holderName);
 }
 
 std::string Account::getAccountNum()
 {
-    return(this->accountNum);
+    return (this->accountNum);
 }
 
 void Account::displayBalance()
 {
-    std::cout << "The current balance is " << this->balance <<".\n";
+    std::cout << "The current balance is " << this->balance << ".\n";
 }
 
 double Account::getBalance()
 {
-    return(this->balance);
+    return (this->balance);
 }
 
 void Account::withdraw(double sum) //Withdraw a certain amount from the balance
 {
-    if(this->balance - sum > 0)
+    if (this->balance - sum > 0)
     {
         this->balance -= sum;
         std::cout << sum << " withdrawn from the account.\n";
